@@ -1,0 +1,3 @@
+# PokedexJS
+
+Pokedex Primera version
