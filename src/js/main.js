@@ -93,6 +93,7 @@ const renderPokemonStats = stats => {
 }
 
 const renderNotFound = () => {
+    alert("Pokemon no encontrado");
     pokeName.textContent = 'No encontrado';
     pokeImg.setAttribute('src', '');
     pokeImg.style.background =  '#fff';
