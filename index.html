@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/custom.css">
+    <title>Pokedex</title>
+    <script src="src/js/main.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+    <div class="container sombra">
+        <div class="col-1 col-red-2 border-top-left border-bot-left"></div>
+        <div class="col-11">
+            <!-- CABECERA CAMARA-->
+            <div class="row color1 border-top-rigth">
+                <div class="col-3 ">
+                    <div class="row cam1 border1">
+                        <div class="row cam2">
+                            <div class="row cam3">
+                                <div class="row cam4">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7">
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="row cam5 col-red-2 border1">
+
+                            </div>
+                        </div>
+                        <div class="col-2 ">
+                            <div class="row cam5 col-yell-2">
+
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="row cam5 col-yell-3">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="row"></div>
+                    <div class="row"></div>
+                </div>
+            </div>
+            <!--FIN CABECERA CAMARA-->
+            <div class="row divi "></div>
+            <!--PANTALLA-->
+            <div data-poke-card class="row">
+                <div class="col-1 color1 " style="height: 250px;"></div>
+                <div class="col-10 cc">
+                    <div class="row">
+                        <div class="col-1 cc1"></div>
+                        <div class="col-10" ">
+                        <div class=" row cc1" style="height: 15px;"></div>
+                        <div data-poke-img-container class="row cc primary-screen"
+                            style=" height: 200px; width: 365px; align-content: center;">
+                            <img data-poke-img class="poke-img" src="" style="margin-left: 75px;"/>
+
+                        </div>
+                        <div data-poke-id class="row cc1" style="height: 15px;"></div>
+                    </div>
+                    <div class="col-1 cc1"></div>
+                </div>
+            </div>
+            <div class="col-1 color1"></div>
+        </div>
+        <!--FIN PANTALLA-->
+        <div class="row divi"></div>
+        <!--PANEL DATOS-->
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-6 text-center">Tipo:</div>
+                            <div data-poke-types class="col-6 poke-types" ">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-6 text-center">Franqueza:</div>
+                            <div class="col-6">
+                                <p id="tipo"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-poke-stats class="row poke-stats">
+                    <div class="col-2">
+                        <div class="row">
+                            <div class="col-12 cc" style="height: 100px;">
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                PS
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="row">
+                            <div class="col-12 cc" style="height: 100px;">
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                ATK
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="row">
+                            <div class="col-12 cc" style="height: 100px;">
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                DEF
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="row">
+                            <div class="col-12 cc" style="height: 100px;">
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                SP. ATK
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="row">
+                            <div class="col-12 cc" style="height: 100px;">
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                SP. DEF
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="row">
+                            <div class="col-12 cc" style="height: 100px;">
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                DEF
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row divi">
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-6 text-center">ALTURA</div>
+                            <div data-poke-height class="col-6"></div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-6 text-center">PESO</div>
+                            <div data-poke-peso class="col-6"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--FIN PANEL DE DATOS-->
+        <div class="row divi"></div>
+        <!--INICIO DE INSERCION DE DATOS-->
+        <div class="row">
+            <div class="col-4">
+                <div class="row divi"></div>
+                <div class="row text-center">
+                    <div class="col-6">Nombre:</div>
+                    <div data-poke-name class="col-6"></div>
+                </div>
+                <div class="row divi"></div>
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-8 pantalla2">
+                        <form action="" onsubmit="searchPokemon(event)">
+                            <input type="text" name="pokemon" autocomplete="off" class="pantalla3"
+                                style="width: 113px;">
+                        </form>
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+                <div class="row divi"></div>
+            </div>
+            <div class="col-8">
+                <div class="row">
+                    <div class="col-4 color1">
+                        <div class="row color1">
+                            <button class="busqueda">Buscar</button>
+                        </div>
+                    </div>
+                    <div class="col-3 color1">
+                        <div class="row">
+                            <button class="boton1"></button>
+                        </div>
+                        <div class="row">
+                            <button class="boton2"></button>
+                        </div>
+                    </div>
+                    <div class="col-5 color1">
+                        <div class="row">
+                            <div class="col-4"></div>
+                            <div class="col-4">
+                                <button class="boton3"></button>
+                            </div>
+                            <div class="col-4"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <button class="boton4" style="margin-left: 15px;"> </button>
+                            </div>
+                            <div class="col-4 boton5"></div>
+                            <div class="col-4">
+                                <button class="boton4"    >></button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4"></div>
+                            <div class="col-4">
+                                <button class="boton3"></button>
+                            </div>
+                            <div class="col-4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row divi" style="height: 35px;"></div>
+        <div class="row divi2"></div>
+    </div>
+    </div>
+</body>
+
+</html>
