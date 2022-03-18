@@ -203,7 +203,7 @@
                     <div class="col-2"></div>
                     <div class="col-8 pantalla2">
                         <form action="" onsubmit="searchPokemon(event)">
-                            <input type="text" name="pokemon" autocomplete="off" class="pantalla3"
+                            <input type="text" id="pokemon" name="pokemon" autocomplete="off" class="pantalla3"
                                 style="width: 113px;" placeholder="Ingresa el nombre del pokemon">
                         </form>
                     </div>
@@ -215,7 +215,7 @@
                 <div class="row">
                     <div class="col-4 color1">
                         <div class="row color1">
-                            <button class="busqueda">Buscar</button>
+                            <button onclick="searchPokemon1()"  class="busqueda">Buscar</button>
                         </div>
                     </div>
                     <div class="col-3 color1">

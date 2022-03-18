@@ -38,6 +38,16 @@ const searchPokemon = event => {
         .catch(err => renderNotFound())
 }
 
+function searchPokemon1() {
+    const val = document.getElementById("pokemon").value;
+    console.log(val);
+    fetch(`https://pokeapi.co/api/v2/pokemon/${val.toLowerCase()}`)
+    .then(data => data.json())
+    .then(response => renderPokemonData(response))
+    .catch(err => renderNotFound())
+
+}
+
 const nextPokemon = event =>{
     const { value } = event.target.next;
     fetch(`https://pokeapi.co/api/v2/pokemon/${data.id + 1}`)
@@ -71,6 +81,7 @@ const setCardColor = types => {
 const renderPokemonTypes = types => {
     pokeTypes.innerHTML = '';
     types.forEach(type => {
+
         const typeTextElement = document.createElement("div");
         typeTextElement.style.color = typeColors[type.type.name];
         typeTextElement.textContent = type.type.name;
